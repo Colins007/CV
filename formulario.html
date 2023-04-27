@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Universer GIFT</title>
+  </head>
+  <body>
+    <style>
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #ffebeb;
+}
+header {
+	background-image: url(https://d1ih8jugeo2m5m.cloudfront.net/2023/01/tienda-de-regalos-originales.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+	padding: 75px;
+  width: 600px;
+  border-radius: 5px;
+}
+div.pol {
+    background-color: rgba(255, 255, 255, 0.502);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	border-radius: 8px;
+  padding: 75px;
+  width: 600px;
+}
+div.contenedor {
+  text-align: center;
+  padding: 10px 20px;
+    
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	animation-duration: 5s;
+    animation-name: slidein;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 25px;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+section {
+	margin: auto;
+}
+
+#article1{
+    padding: 30px;
+}
+
+#intro{
+    padding: 20px;
+
+}
+
+#article2{
+    padding: 30px;
+}
+
+#article3{
+    padding: 30px;
+}
+
+img{
+    width: 90%;
+	border-radius: 8px;
+}
+
+header:hover{
+	background-color: #ff000034;
+	-webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+	box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+	-webkit-transition: 1s linear;
+	transition: 1s linear;
+	border: 2px solid black;
+}
+nav ul li a{
+	position: relative;
+	font-size: 2em;
+	line-height: 1em;
+	letter-spacing: 7px;
+	text-transform: uppercase;
+	color: transparent;
+	-webkit-text-stroke: 1px #000000;
+}
+nav ul li a:before{
+	content: attr(data-text);
+	position: absolute;
+	color: var(--clr);
+	width: 0;
+	overflow: hidden;
+	transition: 1s;
+	border-right: 6px solid var(--clr);
+	-webkit-text-stroke: 2px var(--clr);
+}
+nav ul li a:hover:before{
+	width: 100%;
+	filter: drop-shadow(0 2px 24px var(--clr));
+}
+
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #000000;
+    color: #ffffff;
+	text-align: left;
+    padding: 5px;
+    border-radius: 6px;
+    bottom: 125%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000000 transparent transparent transparent;
+  }
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.third {
+  border-color: #000000;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #000000 inset, 0 0 0 0 #000000;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.third:hover {
+  box-shadow: 0 0 10px 0 #6200ff inset, 0 0 10px 4px #6200ff;
+}
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 0.6em;
+  color: #ffffff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.btn:hover, .btn:focus {
+  color: #000000;
+  outline: 0;
+}
+
+    </style>
+    <center>
+        <header>
+            <nav>
+                <ul>
+                    <li style="--clr:#000000"><a href="#intro" data-text="Encuesta">Encuesta</a></li> 
+                </ul>
+            </nav>
+        </header>
+        </center>
+    <form action="Productos.html">
+      </center>
+    <div class="contenedor">
+	<main>
+		<section id="intro">
+      <center>
+        <div class="pol"><h1>Colores Favorito</h1><br>
+        <hr><br>
+        <input type="radio" name="rojo" id="rojo"><label for="rojo">Rojo</label>
+        <input type="radio" name="azul" id="azul"><label for="azul">Azul</label>
+        <input type="radio" name="negro" id="negro"><label for="negro">Negro</label>
+        <input type="radio" name="amarillo" id="amarillo"><label for="amarillo">Amarillo</label>
+        <input type="radio" name="morado" id="morado"><label for="morado">Morado</label>
+        <input type="radio" name="cafe" id="cafe"><label for="cafe">Cafe</label>
+        <input type="radio" name="naranja" id="naranja"><label for="naranja">Naranja</label>
+        <input type="radio" name="verde" id="verde"><label for="verde">Verde</label>
+        </div>
+      </center>
+			<br><br>
+            <div class="pol">
+			<center><h2>Musica Favorita</h2></center><hr>
+			<br>
+      <input type="radio" name="rock" id="rock"><label for="rock">Rock</label>
+        <input type="radio" name="pop" id="pop"><label for="pop">Pop</label>
+        <input type="radio" name="clasica" id="clasica"><label for="clasica">Clasica</label>
+        <input type="radio" name="jazz" id="jazz"><label for="jazz">Jazz</label>
+        <input type="radio" name="country" id="country"><label for="country">Country</label>
+		</div></section>
+        <br>
+		<section id="article1">
+            <div class="pol">
+			<center><h2>Comida Favorita</h2></center>
+			    <div class="tooltip"><hr><br>
+            <input type="radio" name="pizza" id="pizza"><label for="pizza">Pizza</label>
+            <input type="radio" name="ham" id="ham"><label for="ham">Hamburgesa</label>
+            <input type="radio" name="sushi" id="sushi"><label for="sushi">Sushi</label>
+            <input type="radio" name="china" id="china"><label for="china">Comida china</label>
+            <input type="radio" name="tacos" id="tacos"><label for="tacos">Tacos</label>
+            <input type="radio" name="ens" id="ens"><label for="ens">Ensalada</label>
+          </div>
+		    </div></section>
+        <br>
+		<section id="article2">
+            <div class="pol">
+			<center><h2>Dulces Favoritos</h2></center>
+			    <div class="tooltip"><hr><br>
+            <input type="radio" name="choco" id="choco"><label for="choco">Chocolates</label>
+            <input type="radio" name="gomita" id="gomita"><label for="gomita">Gomitas</label>
+            <input type="radio" name="sabritas" id="sabritas"><label for="sabritas">Sabritas</label>
+            <input type="radio" name="tam" id="tam"><label for="tam">Tamarindo</label>
+            <input type="radio" name="galletas" id="galletas"><label for="galletas">Galletas</label>
+		        </div>
+		    </div></section>
+        <br>
+		<section id="article3">
+            <div class="pol">
+			<center><h2>Objetos Pequeños o Grandes</h2></center>
+			<hr><br>
+			<input type="radio" name="peque" id="peque"><label for="peque">Pequeños</label>
+        <input type="radio" name="grande" id="grande"><label for="grande">Grandes</label>
+		</div></section>
+    <center>
+      <button class="btn third">Enviar Encuesta</button>
+    </center>
+    
+	</main>
+    </div>
+      
+    </form>
+  </body>
+</html>
